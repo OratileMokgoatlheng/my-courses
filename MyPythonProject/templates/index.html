@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Hello World</title>
+    <title>Chess Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Hello, Flask!</h1>
-    <p>I just created my secod pyhon flask</p>
+    <div id="board"></div>
+    <script src="{{ url_for('static', filename='chess.js') }}"></script>
 </body>
 </html>
